@@ -8,9 +8,9 @@ function Content({todoList, todoFilter, filterSet, todosSet}) {
         <>
             <section className="main">
                 <input className="toggle-all" type="checkbox" />
-                <TodoList todos={todoList} />
+                <TodoList todos={todoList} todosSet={todosSet} />
             </section>
-            <footer todoFilter={}></footer>
+            <footer todoFilter={todoFilter} filterSet={filterSet} todos={todoList}/>
 
         </>
     )
