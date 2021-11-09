@@ -12,7 +12,7 @@ function App() {
       completed: false,
     },
     {
-      itle: "deneme 1",
+      title: "deneme 1",
       id: "1234",
       completed: true,
     },
