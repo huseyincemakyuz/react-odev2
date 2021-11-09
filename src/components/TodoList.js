@@ -26,7 +26,7 @@ function TodoList({todos, todosSet}) {
 
     return (
         <div>
-            <ul class="todo-list">
+            <ul className="todo-list">
                 {
                     todos.map((item, index) => {
                         <li key={index} className={item.completed ? "completed" : ""}>

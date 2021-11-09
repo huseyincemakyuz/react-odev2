@@ -16,17 +16,18 @@ function Header({todoSet, todoValues}) {
         e.preventDefault;
         if(form.title === ""){
             return false
-        }
+        } 
+    }
         
         todoSet([...todoValues, form])
         setForm(initialValue);
-    }
+    
 
     return (
        <header className="header">
            <h1>todos</h1>
            <form onSubmit={onSubmit}>
-               <input classNmae="new-todo" 
+               <input className="new-todo" 
                placeholder="What needs to be done?" 
                autoFocus
                value={form.title}
