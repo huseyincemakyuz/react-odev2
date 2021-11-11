@@ -13,10 +13,10 @@ function Header({todoSet, todoValues}) {
     }
 
     const onSubmit = (e) => {
-        e.preventDefault;
-        if(form.title === ""){
+        e.preventDefault();
+        if (form.title === ""){
             return false
-        } 
+        }
     }
         
         todoSet([...todoValues, form])
