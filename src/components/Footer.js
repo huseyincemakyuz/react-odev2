@@ -22,9 +22,10 @@ function Footer({ todoFilter, filterSet, todosSet, todos}) {
             <strong>{leftCount.length}</strong>
             items left
         </span>
-        <ul>
+        
+        <ul className="filters">
                 <li>
-                    <a href="#" className={todoFilter === "all" ?" selected": ""} onClick={() => filterSet("all") }>All</a>
+                    <a href="#" className={todoFilter === "all" ? "selected": ""} onClick={() => filterSet("all") }>All</a>
                 </li>
                 <li>
                     <a href="#" className={todoFilter === "active" ? "selected" : ""} onClick={() => filterSet("active") }>Active</a>

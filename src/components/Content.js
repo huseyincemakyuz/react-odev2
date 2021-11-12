@@ -10,7 +10,7 @@ function Content({todoList, todoFilter, filterSet, todosSet}) {
                 <input className="toggle-all" type="checkbox" />
                 <TodoList todos={todoList} todosSet={todosSet} />
             </section>
-            <footer todoFilter={todoFilter} filterSet={filterSet} todos={todoList}/>
+            <Footer todoFilter={todoFilter} filterSet={filterSet} todos={todoList} todosSet={todosSet}/>
 
         </>
     )

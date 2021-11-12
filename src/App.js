@@ -9,7 +9,7 @@ function App() {
     {
       title: "deneme",
       id: "123",
-      completed: false,
+      completed: false, 
     },
     {
       title: "deneme 1",
@@ -30,14 +30,13 @@ function App() {
         return item.completed === false
       }))
       setFilteredList(newFiltered)
-    } else if (filter === "active"){
+    } else if (filter === "completed"){
       const newFiltered = todos.filter((item => {
         return item.completed === true
       }))
       setFilteredList(newFiltered)
     }
   },[filter, todos])
-
 
 
   return (

@@ -15,23 +15,25 @@ function Header({todoSet, todoValues}) {
     const onSubmit = (e) => {
         e.preventDefault();
         if (form.title === ""){
-            return false
+            return false;
         }
-    }
-        
+
         todoSet([...todoValues, form])
         setForm(initialValue);
-    
-
+    }
+        
+        
     return (
        <header className="header">
            <h1>todos</h1>
            <form onSubmit={onSubmit}>
-               <input className="new-todo" 
-               placeholder="What needs to be done?" 
-               autoFocus
-               value={form.title}
-               onChange={inputChanged} />
+               <input 
+                    className="new-todo" 
+                    placeholder="What needs to be done?" 
+                    autoFocus
+                    value={form.title}
+                    onChange={inputChanged} 
+               />
             </form>
        </header>
     )
